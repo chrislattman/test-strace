@@ -1,0 +1,816 @@
+4428  execve("./tester", ["./tester"], 0xffffe02732f8 /* 54 vars */) = 0
+4428  sched_getaffinity(0, 8192, [0, 1]) = 32
+4428  openat(AT_FDCWD, "/sys/kernel/mm/transparent_hugepage/hpage_pmd_size", O_RDONLY) = 3
+4428  read(3, "2097152\n", 20)          = 8
+4428  close(3)                          = 0
+4428  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a968448000
+4428  mmap(NULL, 131072, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a968428000
+4428  mmap(NULL, 1048576, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a968328000
+4428  mmap(NULL, 8388608, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a967b28000
+4428  mmap(NULL, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a963b28000
+4428  mmap(NULL, 536870912, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a943b28000
+4428  mmap(0x4000000000, 67108864, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x4000000000
+4428  mmap(NULL, 33554432, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a941b28000
+4428  mmap(NULL, 2165776, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a941917000
+4428  mmap(0x4000000000, 4194304, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x4000000000
+4428  mmap(0xe3a968428000, 131072, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xe3a968428000
+4428  mmap(0xe3a968328000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xe3a968328000
+4428  mmap(0xe3a967b2a000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xe3a967b2a000
+4428  mmap(0xe3a963b38000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xe3a963b38000
+4428  mmap(0xe3a943ba8000, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xe3a943ba8000
+4428  mmap(NULL, 1048576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a941817000
+4428  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a941807000
+4428  mmap(NULL, 65536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a9417f7000
+4428  rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+4428  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+4428  sigaltstack({ss_sp=0x4000004000, ss_flags=0, ss_size=32768}, NULL) = 0
+4428  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4428  gettid()                          = 4428
+4428  rt_sigaction(SIGHUP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGHUP, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGINT, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGQUIT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGQUIT, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGILL, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGILL, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGTRAP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGTRAP, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGABRT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGABRT, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGBUS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGBUS, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGFPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGFPE, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGUSR1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGUSR1, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGSEGV, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGSEGV, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGUSR2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGUSR2, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGPIPE, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGPIPE, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGALRM, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGTERM, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGSTKFLT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGSTKFLT, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGCHLD, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGCHLD, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGURG, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGURG, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGXCPU, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGXCPU, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGXFSZ, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGXFSZ, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGVTALRM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGVTALRM, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGPROF, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGPROF, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGWINCH, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGIO, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGIO, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGPWR, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGPWR, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGSYS, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGSYS, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRTMIN, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_1, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_1, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_2, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_3, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_3, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_4, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_4, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_5, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_5, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_6, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_6, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_7, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_7, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_8, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_8, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_9, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_9, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_10, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_10, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_11, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_11, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_12, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_12, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_13, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_13, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_14, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_14, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_15, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_15, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_16, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_16, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_17, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_17, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_18, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_18, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_19, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_19, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_20, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_20, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_21, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_21, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_22, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_22, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_23, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_23, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_24, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_24, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_25, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_25, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_26, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_26, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_27, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_27, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_28, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_28, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_29, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_29, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_30, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_30, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_31, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_31, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigaction(SIGRT_32, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+4428  rt_sigaction(SIGRT_32, {sa_handler=0x6d590, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4428  rt_sigprocmask(SIG_SETMASK, ~[], [], 8) = 0
+4428  clone(child_stack=0x400004e000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM) = 4429
+4428  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4428  rt_sigprocmask(SIG_SETMASK, ~[], [], 8) = 0
+4428  clone(child_stack=0x4000050000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM) = 4430
+4428  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4428  rt_sigprocmask(SIG_SETMASK, ~[], [], 8) = 0
+4428  clone(child_stack=0x400004a000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM) = 4431
+4428  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4428  futex(0x16aca8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4431  gettid()                          = 4431
+4431  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+4431  sigaltstack({ss_sp=0x4000066000, ss_flags=0, ss_size=32768}, NULL) = 0
+4431  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4431  gettid()                          = 4431
+4431  futex(0x16aca8, FUTEX_WAKE_PRIVATE, 1) = 1
+4428  <... futex resumed>)              = 0
+4428  rt_sigprocmask(SIG_SETMASK, ~[], [], 8) = 0
+4428  clone(child_stack=0x400004c000, flags=CLONE_VM|CLONE_FS|CLONE_FILES|CLONE_SIGHAND|CLONE_THREAD|CLONE_SYSVSEM) = 4432
+4428  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4431  futex(0x400003e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4428  futex(0x16aca8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4430  gettid()                          = 4430
+4430  sigaltstack(NULL, {ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+4430  sigaltstack({ss_sp=0x4000050000, ss_flags=0, ss_size=32768}, NULL) = 0
+4430  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4430  gettid()                          = 4430
+4430  futex(0x16aca8, FUTEX_WAKE_PRIVATE, 1) = 1
+4428  <... futex resumed>)              = 0
+4428  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xe3a9417b7000
+4428  fcntl(0, F_GETFL <unfinished ...>
+4430  futex(0x400003e548, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4428  <... fcntl resumed>)              = 0x402 (flags O_RDWR|O_APPEND)
+4428  fcntl(1, F_GETFL)                 = 0x402 (flags O_RDWR|O_APPEND)
+4428  fcntl(2, F_GETFL)                 = 0x402 (flags O_RDWR|O_APPEND)
+4428  getpid()                          = 4428
+4428  write(1, "Parent PID = 4428\n", 18) = 18
+4428  newfstatat(AT_FDCWD, "/home/chris/.local/bin/date", 0x40000a8038, 0) = -1 ENOENT (No such file or directory)
+4428  newfstatat(AT_FDCWD, "/usr/local/sbin/date", 0x40000a80f8, 0) = -1 ENOENT (No such file or directory)
+4428  newfstatat(AT_FDCWD, "/usr/local/bin/date", 0x40000a81b8, 0) = -1 ENOENT (No such file or directory)
+4428  newfstatat(AT_FDCWD, "/usr/sbin/date", 0x40000a8278, 0) = -1 ENOENT (No such file or directory)
+4428  newfstatat(AT_FDCWD, "/usr/bin/date", {st_mode=S_IFREG|0755, st_size=88424, ...}, 0) = 0
+4428  openat(AT_FDCWD, "/dev/null", O_RDONLY|O_CLOEXEC) = 3
+4428  epoll_create1(EPOLL_CLOEXEC)      = 4
+4428  pipe2([5, 6], O_NONBLOCK|O_CLOEXEC) = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 5, {events=EPOLLIN, data={u32=1675712, u64=1675712}}) = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098645176, u64=250316087623352}}) = -1 EPERM (Operation not permitted)
+4428  pipe2([7, 8], O_CLOEXEC)          = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 7, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098645176, u64=250316087623352}}) = 0
+4428  fcntl(7, F_GETFL)                 = 0 (flags O_RDONLY)
+4428  fcntl(7, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 8, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098644936, u64=250316087623112}}) = 0
+4428  fcntl(8, F_GETFL)                 = 0x1 (flags O_WRONLY)
+4428  fcntl(8, F_SETFL, O_WRONLY|O_NONBLOCK) = 0
+4428  pipe2([9, 10], O_CLOEXEC)         = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 9, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098644696, u64=250316087622872}}) = 0
+4428  fcntl(9, F_GETFL)                 = 0 (flags O_RDONLY)
+4428  fcntl(9, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 10, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098644456, u64=250316087622632}}) = 0
+4428  fcntl(10, F_GETFL)                = 0x1 (flags O_WRONLY)
+4428  fcntl(10, F_SETFL, O_WRONLY|O_NONBLOCK) = 0
+4428  fcntl(8, F_GETFL)                 = 0x801 (flags O_WRONLY|O_NONBLOCK)
+4428  fcntl(8, F_SETFL, O_WRONLY)       = 0
+4428  fcntl(10, F_GETFL)                = 0x801 (flags O_WRONLY|O_NONBLOCK)
+4428  fcntl(10, F_SETFL, O_WRONLY)      = 0
+4428  pipe2([11, 12], O_CLOEXEC)        = 0
+4428  getpid()                          = 4428
+4428  rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+4428  rt_sigprocmask(SIG_SETMASK, ~[], NULL, 8) = 0
+4428  clone(child_stack=NULL, flags=CLONE_VM|CLONE_VFORK|SIGCHLD <unfinished ...>
+4429  gettid( <unfinished ...>
+4433  rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGTRAP, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGABRT, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGFPE, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGUSR1, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGUSR2, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGSTKFLT, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGURG, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGXCPU, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGXFSZ, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGVTALRM, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGPROF, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGWINCH, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGIO, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGPWR, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGSYS, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_1, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_3, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_4, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_5, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_6, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_7, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_8, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_9, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_10, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_11, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_12, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_13, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_14, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_15, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_16, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_17, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_18, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_19, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_20, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_21, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_22, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_23, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_24, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_25, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_26, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_27, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_28, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_29, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_30, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_31, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigaction(SIGRT_32, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4433  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4433  dup3(3, 0, 0)                     = 0
+4433  dup3(8, 1, 0)                     = 1
+4433  dup3(10, 2, 0)                    = 2
+4433  execve("/usr/bin/date", ["date"], 0x40000b2000 /* 54 vars */ <unfinished ...>
+4432  gettid( <unfinished ...>
+4429  <... gettid resumed>)             = 4429
+4432  <... gettid resumed>)             = 4432
+4429  sigaltstack(NULL,  <unfinished ...>
+4428  <... clone resumed>)              = 4433
+4428  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+4432  sigaltstack(NULL,  <unfinished ...>
+4429  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+4428  <... rt_sigprocmask resumed>NULL, 8) = 0
+4428  close(12 <unfinished ...>
+4432  <... sigaltstack resumed>{ss_sp=NULL, ss_flags=SS_DISABLE, ss_size=0}) = 0
+4429  sigaltstack({ss_sp=0x4000040000, ss_flags=0, ss_size=32768}, NULL) = 0
+4433  <... execve resumed>)             = 0
+4432  sigaltstack({ss_sp=0x4000070000, ss_flags=0, ss_size=32768},  <unfinished ...>
+4429  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+4428  <... close resumed>)              = 0
+4429  <... rt_sigprocmask resumed>NULL, 8) = 0
+4432  <... sigaltstack resumed>NULL)    = 0
+4428  read(11,  <unfinished ...>
+4429  gettid( <unfinished ...>
+4432  rt_sigprocmask(SIG_SETMASK, [],  <unfinished ...>
+4428  <... read resumed>"", 8)          = 0
+4429  <... gettid resumed>)             = 4429
+4432  <... rt_sigprocmask resumed>NULL, 8) = 0
+4433  brk(NULL <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4433  <... brk resumed>)                = 0xbc4672d77000
+4432  gettid( <unfinished ...>
+4428  close(11 <unfinished ...>
+4432  <... gettid resumed>)             = 4432
+4428  <... close resumed>)              = 0
+4428  close(3 <unfinished ...>
+4433  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4432  futex(0x400003ed48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4428  <... close resumed>)              = 0
+4428  epoll_ctl(4, EPOLL_CTL_DEL, 8, 0x4000062b18 <unfinished ...>
+4433  <... mmap resumed>)               = 0xfe5f12202000
+4428  <... epoll_ctl resumed>)          = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4433  faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4433  <... faccessat resumed>)          = -1 ENOENT (No such file or directory)
+4428  close(8 <unfinished ...>
+4433  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+4428  <... close resumed>)              = 0
+4428  epoll_ctl(4, EPOLL_CTL_DEL, 10, 0x4000062b18 <unfinished ...>
+4433  <... openat resumed>)             = 3
+4428  <... epoll_ctl resumed>)          = 0
+4428  close(10 <unfinished ...>
+4433  newfstatat(3, "",  <unfinished ...>
+4428  <... close resumed>)              = 0
+4428  futex(0x400003ed48, FUTEX_WAKE_PRIVATE, 1) = 1
+4428  waitid(P_PID, 4433,  <unfinished ...>
+4433  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=61907, ...}, AT_EMPTY_PATH) = 0
+4432  <... futex resumed>)              = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4433  mmap(NULL, 61907, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+4432  mmap(NULL, 262144, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4433  <... mmap resumed>)               = 0xfe5f121bd000
+4432  <... mmap resumed>)               = 0xe3a941777000
+4433  close(3 <unfinished ...>
+4432  read(7,  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4433  <... close resumed>)              = 0
+4432  <... read resumed>0x4000078000, 512) = -1 EAGAIN (Resource temporarily unavailable)
+4429  futex(0x400003e548, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+4433  openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC <unfinished ...>
+4432  futex(0x400003ed48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4429  <... futex resumed>)              = 1
+4430  <... futex resumed>)              = 0
+4429  futex(0x400003ed48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+4432  <... futex resumed>)              = -1 EAGAIN (Resource temporarily unavailable)
+4433  <... openat resumed>)             = 3
+4429  <... futex resumed>)              = 0
+4432  read(9,  <unfinished ...>
+4430  epoll_pwait(4,  <unfinished ...>
+4433  read(3,  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4433  <... read resumed>"\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0@\0\0\0\0\0\0\0\230\353\30\0\0\0\0\0\0\0\0\0@\08\0\n\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\220Q\25\0\0\0\0\0\220Q\25\0\0\0\0\0\220Q\25\0\0\0\0\0\33\0\0\0\0\0\0\0\33\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4t\30\0\0\0\0\0\4t\30\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0\250}\30\0\0\0\0\0\250}\31\0\0\0\0\0\250}\31\0\0\0\0\08I\0\0\0\0\0\0\300\20\1\0\0\0\0\0\0\0\1\0\0\0\0\0\2\0\0\0\6\0\0\0\250\253\30\0\0\0\0\0\250\253\31\0\0\0\0\0\250\253\31\0\0\0\0\0\300\1\0\0\0\0\0\0\300\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0p\2\0\0\0\0\0\0p\2\0\0\0\0\0\0p\2\0\0\0\0\0\0D\0\0\0\0\0\0\0D\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0\7\0\0\0\4\0\0\0\250}\30\0\0\0\0\0\250}\31\0\0\0\0\0\250}\31\0\0\0\0\0\20\0\0\0\0\0\0\0\220\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0P\345td\4\0\0\0\254Q\25\0\0\0\0\0\254Q\25\0\0\0\0\0\254Q\25\0\0\0\0\0\224g\0\0\0\0\0\0\224g\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0\250}\30\0\0\0\0\0\250}\31\0\0\0\0\0\250}\31\0\0\0\0\0X2\0\0\0\0\0\0X2\0\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\252n\22/\243\232\340-A*\373I\327^3(\37\315(\5\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\7\0\0\0\0\0\0\0\0\0\0\0\377\3\0\0\26\0\0\0\0\1\0\0\16\0\0\0\0000\22\\\240 \23\1\210\3\346\220\305E\214\0\304\0X\0\7\204 p\302\200\1\r\212\34\301\24\21\200\310D2\10*@\210V<- N\262H&\204\320\216\4\f\0\3\2\16\261\254:\17f\310\200\3003\0\300\fP\t \201\t\224\v$ ($\0\204$Z0\20X\200\312DB(\0\6\200\20\32C\0\250T\200\0IP\4Q\212P\22\4\0$\0\10  \21\20", 832) = 832
+4432  <... read resumed>0x40000ba000, 32768) = -1 EAGAIN (Resource temporarily unavailable)
+4430  <... epoll_pwait resumed>[], 128, 0, NULL, 1) = 0
+4432  epoll_pwait(4,  <unfinished ...>
+4433  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1637400, ...}, AT_EMPTY_PATH) = 0
+4432  <... epoll_pwait resumed>[], 128, 0, NULL, 1) = 0
+4430  epoll_pwait(4,  <unfinished ...>
+4433  mmap(NULL, 1805928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4432  futex(0x400003ed48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4433  <... mmap resumed>)               = 0xfe5f12004000
+4429  futex(0x16b058, FUTEX_WAIT_PRIVATE, 0, {tv_sec=60, tv_nsec=0} <unfinished ...>
+4433  mmap(0xfe5f12010000, 1740392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xfe5f12010000
+4433  munmap(0xfe5f12004000, 49152)     = 0
+4433  munmap(0xfe5f121b9000, 15976)     = 0
+4433  mprotect(0xfe5f12198000, 61440, PROT_NONE) = 0
+4433  mmap(0xfe5f121a7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0xfe5f121a7000
+4433  mmap(0xfe5f121ad000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xfe5f121ad000
+4433  close(3)                          = 0
+4433  set_tid_address(0xfe5f12202f50)   = 4433
+4433  set_robust_list(0xfe5f12202f60, 24) = 0
+4433  rseq(0xfe5f12203620, 0x20, 0, 0xd428bc00) = 0
+4433  mprotect(0xfe5f121a7000, 16384, PROT_READ) = 0
+4433  mprotect(0xbc463a994000, 4096, PROT_READ) = 0
+4433  mprotect(0xfe5f12207000, 8192, PROT_READ) = 0
+4433  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+4433  munmap(0xfe5f121bd000, 61907)     = 0
+4433  getrandom("\x7d\xbd\x8c\xa3\x78\x3b\x3a\x72", 8, GRND_NONBLOCK) = 8
+4433  brk(NULL)                         = 0xbc4672d77000
+4433  brk(0xbc4672d98000)               = 0xbc4672d98000
+4433  openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+4433  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5712208, ...}, AT_EMPTY_PATH) = 0
+4433  mmap(NULL, 5712208, PROT_READ, MAP_PRIVATE, 3, 0) = 0xfe5f11a00000
+4433  close(3)                          = 0
+4433  openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+4433  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3552, ...}, AT_EMPTY_PATH) = 0
+4433  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3552, ...}, AT_EMPTY_PATH) = 0
+4433  read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0\0\0\0\354\0\0\0\6\0\0\0\24\200\0\0\0\236\246\36p\237\272\353`\240\206\0p\241\232\315`\242e\342p\243\203\351\340\244j\256p\2455\247`\246S\312\360\247\25\211`\2503\254\360\250\376\245\340\252\23\216\360\252\336\207\340\253\363p\360\254\276i\340\255\323R\360\256\236K\340\257\2634\360\260~-\340\261\234Qp\262gJ`\263|3p\264G,`\265\\\25p\266'\16`\267;\367p\270\6\360`\271\33\331p\271\346\322`\273\4\365\360\273\306\264`\274\344\327\360\275\257\320\340\276\304\271\360\277\217\262\340\300\244\233\360\301o\224\340\302\204}\360\303Ov\340\304d_\360\305/X\340\306M|p\307\17:\340\310-^p\310\370W`\312\r@p\312\3309`\313\210\360p\322#\364p\322`\373\340\323u\344\360\324@\335\340\325U\306\360\326 \277\340\3275\250\360\330\0\241\340\331\25\212\360\331\340\203\340\332\376\247p\333\300e\340\334\336\211p\335\251\202`\336\276kp\337\211d`\340\236Mp\341iF`\342~/p\343I(`\344^\21p\345W.\340\346G-\360\3477\20\340\350'\17\360\351\26\362\340\352\6\361\360\352\366\324\340\353\346\323\360\354\326\266\340\355\306\265\360\356\277\323`\357\257\322p\360\237\265`\361\217\264p\362\177\227`\363o\226p\364_y`\365Oxp\366?[`\367/Zp\370(w\340\371\17<p\372\10Y\340\372\370X\360\373\350;\340\374\330:\360\375\310\35\340\376\270\34\360\377\247\377\340\0\227\376\360\1\207\341\340\2w\340\360\3p\376`\4`\375p\5P\340`\6@\337p\0070\302`\7\215\31p\t\20\244`\t\255\224\360\n\360\206`\v\340\205p\f\331\242\340\r\300gp\16\271\204\340\17\251\203\360\20\231f\340\21\211e\360\22yH\340\23iG\360\24Y*\340\25I)\360\269\f\340\27)\v\360\30\")`\31\10\355\360\32\2\v`\32\362\np\33\341\355`\34\321\354p\35\301\317`\36\261\316p\37\241\261` v\0\360!\201\223`\"U\342\360#j\257\340$5\304\360%J\221\340&\25\246\360'*s\340'\376\303p)\nU\340)\336\245p*\3527\340+\276\207p,\323T`-\236ip.\2636`/~Kp0\223\30`1gg\3602r\372`3GI\3604R\334`5'+\36062\276`7\7\r\3608\33\332\3408\346\357\3609\373\274\340:\306\321\360;\333\236\340<\257\356p=\273\200\340>\217\320p?\233b\340@o\262pA\204\177`BO\224pCda`D/vpEDC`E\363\250\360G-_\340G\323\212\360I\rA\340I\263l\360J\355#\340K\234\211pL\326@`M|kpN\266\"`O\\MpP\226\4`Q</pRu\346`S\34\21pTU\310`T\373\363pV5\252`V\345\17\360X\36\306\340X\304\361\360Y\376\250\340Z\244\323\360[\336\212\340\\\204\265\360]\276l\340^d\227\360_\236N\340`M\264pa\207k`b-\226pcgM`d\rxpeG/`e\355Zpg'\21`g\315<pi\6\363`i\255\36pj\346\325`k\226:\360l\317\361\340mv\34\360n\257\323\340oU\376\360p\217\265\340q5\340\360ro\227\340s\25\302\360tOy\340t\376\337pv8\226`v\336\301px\30x`x\276\243py\370Z`z\236\205p{\330<`|~gp}\270\36`~^Ip\177\230\0`\3\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\4\5\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\377\377\272\236\0\0\377\377\307\300\1\4\377\377\271\260\0\10\377\377\271\260\0\10\377\377\307\300\1\f\377\377\307\300\1\20LMT\0EDT\0EST\0EWT\0EPT\0\0\0\0\1\0\1\0\0\0\1\0\1TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0\0\0\0\354\0\0\0\6\0\0\0\24\377\377\377\377^\3\360\220\377\377\377\377\236\246\36p\377\377\377\377\237\272\353`\377\377\377\377\240\206\0p\377\377\377\377\241\232\315`\377\377\377\377\242e\342p\377\377\377\377\243\203\351\340\377\377\377\377\244j\256p\377\377\377\377\2455\247`\377\377\377\377\246S\312\360\377\377\377\377\247\25\211`\377\377\377\377\2503\254\360\377\377\377\377\250\376\245\340\377\377\377\377\252\23\216\360\377\377\377\377\252\336\207\340\377\377\377\377\253\363p\360\377\377\377\377\254\276i\340\377\377\377\377\255\323R\360\377\377\377\377\256\236K\340\377\377\377\377\257\2634\360\377\377\377\377\260~-\340\377\377\377\377\261\234Qp\377\377\377\377\262gJ`\377\377\377\377\263|3p\377\377\377\377\264G,`\377\377\377\377\265\\\25p\377\377\377\377\266'\16`\377\377\377\377\267;\367p\377\377\377\377\270\6\360`\377\377\377\377\271\33\331p\377\377\377\377\271\346\322`\377\377\377\377\273\4\365\360\377\377\377\377\273\306\264`\377\377\377\377\274\344\327\360\377\377\377\377\275\257\320\340\377\377\377\377\276\304\271\360\377\377\377\377\277\217\262\340\377\377\377\377\300\244\233\360\377\377\377\377\301o\224\340\377\377\377\377\302\204}\360\377\377\377\377\303Ov\340\377\377\377\377\304d_\360\377\377\377\377\305/X\340\377\377\377\377\306M|p\377\377\377\377\307\17:\340\377\377\377\377\310-^p\377\377\377\377\310\370W`\377\377\377\377\312\r@p\377\377\377\377\312\3309`\377\377\377\377\313\210\360p\377\377\377\377\322#\364p\377\377\377\377\322`\373\340\377\377\377\377\323u\344\360\377\377\377\377\324@\335\340\377\377\377\377\325U\306\360\377\377\377\377\326 \277\340\377\377\377\377\3275\250\360\377\377\377\377\330\0\241\340\377\377\377\377\331\25\212\360\377\377\377\377\331\340\203\340\377\377\377\377\332\376\247p\377\377\377\377\333\300e\340\377\377\377\377\334\336\211p\377\377\377\377\335\251\202`\377\377\377\377\336\276kp\377\377\377\377\337\211d`\377\377\377\377\340\236Mp\377\377\377\377\341iF`\377\377\377\377\342~/p\377\377\377\377\343I(`\377\377\377\377\344^\21p\377\377\377\377\345W.\340\377\377\377\377\346G-\360\377\377\377\377\3477\20\340\377\377\377\377\350'\17\360\377\377\377\377\351\26\362\340\377\377\377\377\352\6\361\360\377\377\377\377\352\366\324\340\377\377\377\377\353\346\323\360\377\377\377\377\354\326\266\340\377\377\377\377\355\306\265\360\377\377\377\377\356\277\323`\377\377\377\377\357\257\322p\377\377\377\377\360\237\265`\377\377\377\377\361\217\264p\377\377\377\377\362\177\227`\377\377\377\377\363o\226p\377\377\377\377\364_y`\377\377\377\377\365Oxp\377\377\377\377\366?[`\377\377\377\377\367/Zp\377\377\377\377\370(w\340\377\377\377\377\371\17<p\377\377\377\377\372\10Y\340\377\377\377\377\372\370X\360\377\377\377\377\373\350;\340\377\377\377\377\374\330:\360\377\377\377\377\375\310\35\340\377\377\377\377\376\270\34\360\377\377\377\377\377\247\377\340\0\0\0\0\0\227\376\360\0\0\0\0\1\207\341\340\0\0\0\0\2w\340\360\0\0\0\0\3p\376`\0\0\0\0\4`\375p\0\0\0\0\5P\340`\0\0\0\0\6@\337p\0\0\0\0\0070\302`\0\0\0\0\7\215\31p\0\0\0\0\t\20\244`\0\0\0\0\t\255\224\360\0\0\0\0\n\360\206`\0\0\0\0\v\340\205p\0\0\0\0\f\331\242\340\0\0\0\0\r\300gp\0\0\0\0\16\271\204\340\0\0\0\0\17\251\203\360\0\0\0\0\20\231f\340\0\0\0\0\21\211e\360\0\0\0\0\22yH\340\0\0\0\0\23iG\360\0\0\0\0\24Y*\340\0\0\0\0\25I)\360\0\0\0\0\269\f\340\0\0\0\0\27)\v\360\0\0\0\0\30\")`\0\0\0\0\31\10\355\360\0\0\0\0\32\2\v`\0\0\0\0\32\362\np\0\0\0\0\33\341\355`\0\0\0\0\34\321\354p\0\0\0\0\35\301\317`\0\0\0\0\36\261\316p\0\0\0\0\37\241\261`\0\0\0\0 v\0\360\0\0\0\0!\201\223`\0\0\0\0\"U\342\360\0\0\0\0#j\257\340\0\0\0\0$5\304\360\0\0\0\0%J\221\340\0\0\0\0&\25\246\360\0\0\0\0'*s\340\0\0\0\0'\376\303p\0\0\0\0)\nU\340\0\0\0\0)\336\245p\0\0\0\0*\3527\340\0\0\0\0+\276\207p\0\0\0\0,\323T`\0\0\0\0-\236ip\0\0\0\0.\2636`\0\0\0\0/~Kp\0\0\0\0000\223\30`\0\0\0\0001gg\360\0\0\0\0002r\372`\0\0\0\0003GI\360\0\0\0\0004R\334`\0\0\0\0005'+\360\0\0\0\00062\276`\0\0\0\0007\7\r\360\0\0\0\08\33\332\340\0\0\0\08\346\357\360\0\0\0\09\373\274\340\0\0\0\0:\306\321\360\0\0\0\0;\333\236\340\0\0\0\0<\257\356p\0\0\0\0=\273\200\340\0\0\0\0>\217\320p\0\0\0\0?\233b\340\0\0\0\0@o\262p\0\0\0\0A\204\177`\0\0\0\0BO\224p\0\0\0\0Cda`\0\0\0\0D/vp\0\0\0\0EDC`\0\0\0\0E\363\250\360\0\0\0\0G-_\340\0\0\0\0G\323\212\360\0\0\0\0I\rA\340\0\0\0\0I\263l\360\0\0\0\0J\355#\340\0\0\0\0K\234\211p\0\0\0\0L\326@`\0\0\0\0M|kp\0\0\0\0N\266\"`\0\0\0\0O\\Mp\0\0\0\0P\226\4`\0\0\0\0Q</p\0\0\0\0Ru\346`\0\0\0\0S\34\21p\0\0\0\0TU\310`\0\0\0\0T\373\363p\0\0\0\0V5\252`\0\0\0\0V\345\17\360\0\0\0\0X\36\306\340\0\0\0\0X\304\361\360\0\0\0\0Y\376\250\340\0\0\0\0Z\244\323\360\0\0\0\0[\336\212\340\0\0\0\0\\\204\265\360\0\0\0\0]\276l\340\0\0\0\0^d\227\360\0\0\0\0_\236N\340\0\0\0\0`M\264p\0\0\0\0a\207k`\0\0\0\0b-\226p\0\0\0\0cgM`\0\0\0\0d\rxp\0\0\0\0eG/`\0\0\0\0e\355Zp\0\0\0\0g'\21`\0\0\0\0g\315<p\0\0\0\0i\6\363`\0\0\0\0i\255\36p\0\0\0\0j\346\325`\0\0\0\0k\226:\360\0\0\0\0l\317\361\340\0\0\0\0mv\34\360\0\0\0\0n\257\323\340\0\0\0\0oU\376\360\0\0\0\0p\217\265\340\0\0\0\0q5\340\360\0\0\0\0ro\227\340\0\0\0\0s\25\302\360\0\0\0\0tOy\340\0\0\0\0t\376\337p\0\0\0\0v8\226`\0\0\0\0v\336\301p\0\0\0\0x\30x`\0\0\0\0x\276\243p\0\0\0\0y\370Z`\0\0\0\0z\236\205p\0\0\0\0{\330<`\0\0\0\0|~gp\0\0\0\0}\270\36`\0\0\0\0~^Ip\0\0\0\0\177\230\0`\3\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\4\5\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\377\377\272\236\0\0\377\377\307\300\1\4\377\377\271\260\0\10\377\377\271\260\0\10\377\377\307\300\1\f\377\377\307\300\1\20LMT\0EDT\0EST\0EWT\0EPT\0\0\0\0\1\0\1\0\0\0\1\0\1\nEST5EDT,M3.2.0,M11.1.0\n", 4096) = 3552
+4433  lseek(3, -2260, SEEK_CUR)         = 1292
+4433  read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0\0\0\0\354\0\0\0\6\0\0\0\24\377\377\377\377^\3\360\220\377\377\377\377\236\246\36p\377\377\377\377\237\272\353`\377\377\377\377\240\206\0p\377\377\377\377\241\232\315`\377\377\377\377\242e\342p\377\377\377\377\243\203\351\340\377\377\377\377\244j\256p\377\377\377\377\2455\247`\377\377\377\377\246S\312\360\377\377\377\377\247\25\211`\377\377\377\377\2503\254\360\377\377\377\377\250\376\245\340\377\377\377\377\252\23\216\360\377\377\377\377\252\336\207\340\377\377\377\377\253\363p\360\377\377\377\377\254\276i\340\377\377\377\377\255\323R\360\377\377\377\377\256\236K\340\377\377\377\377\257\2634\360\377\377\377\377\260~-\340\377\377\377\377\261\234Qp\377\377\377\377\262gJ`\377\377\377\377\263|3p\377\377\377\377\264G,`\377\377\377\377\265\\\25p\377\377\377\377\266'\16`\377\377\377\377\267;\367p\377\377\377\377\270\6\360`\377\377\377\377\271\33\331p\377\377\377\377\271\346\322`\377\377\377\377\273\4\365\360\377\377\377\377\273\306\264`\377\377\377\377\274\344\327\360\377\377\377\377\275\257\320\340\377\377\377\377\276\304\271\360\377\377\377\377\277\217\262\340\377\377\377\377\300\244\233\360\377\377\377\377\301o\224\340\377\377\377\377\302\204}\360\377\377\377\377\303Ov\340\377\377\377\377\304d_\360\377\377\377\377\305/X\340\377\377\377\377\306M|p\377\377\377\377\307\17:\340\377\377\377\377\310-^p\377\377\377\377\310\370W`\377\377\377\377\312\r@p\377\377\377\377\312\3309`\377\377\377\377\313\210\360p\377\377\377\377\322#\364p\377\377\377\377\322`\373\340\377\377\377\377\323u\344\360\377\377\377\377\324@\335\340\377\377\377\377\325U\306\360\377\377\377\377\326 \277\340\377\377\377\377\3275\250\360\377\377\377\377\330\0\241\340\377\377\377\377\331\25\212\360\377\377\377\377\331\340\203\340\377\377\377\377\332\376\247p\377\377\377\377\333\300e\340\377\377\377\377\334\336\211p\377\377\377\377\335\251\202`\377\377\377\377\336\276kp\377\377\377\377\337\211d`\377\377\377\377\340\236Mp\377\377\377\377\341iF`\377\377\377\377\342~/p\377\377\377\377\343I(`\377\377\377\377\344^\21p\377\377\377\377\345W.\340\377\377\377\377\346G-\360\377\377\377\377\3477\20\340\377\377\377\377\350'\17\360\377\377\377\377\351\26\362\340\377\377\377\377\352\6\361\360\377\377\377\377\352\366\324\340\377\377\377\377\353\346\323\360\377\377\377\377\354\326\266\340\377\377\377\377\355\306\265\360\377\377\377\377\356\277\323`\377\377\377\377\357\257\322p\377\377\377\377\360\237\265`\377\377\377\377\361\217\264p\377\377\377\377\362\177\227`\377\377\377\377\363o\226p\377\377\377\377\364_y`\377\377\377\377\365Oxp\377\377\377\377\366?[`\377\377\377\377\367/Zp\377\377\377\377\370(w\340\377\377\377\377\371\17<p\377\377\377\377\372\10Y\340\377\377\377\377\372\370X\360\377\377\377\377\373\350;\340\377\377\377\377\374\330:\360\377\377\377\377\375\310\35\340\377\377\377\377\376\270\34\360\377\377\377\377\377\247\377\340\0\0\0\0\0\227\376\360\0\0\0\0\1\207\341\340\0\0\0\0\2w\340\360\0\0\0\0\3p\376`\0\0\0\0\4`\375p\0\0\0\0\5P\340`\0\0\0\0\6@\337p\0\0\0\0\0070\302`\0\0\0\0\7\215\31p\0\0\0\0\t\20\244`\0\0\0\0\t\255\224\360\0\0\0\0\n\360\206`\0\0\0\0\v\340\205p\0\0\0\0\f\331\242\340\0\0\0\0\r\300gp\0\0\0\0\16\271\204\340\0\0\0\0\17\251\203\360\0\0\0\0\20\231f\340\0\0\0\0\21\211e\360\0\0\0\0\22yH\340\0\0\0\0\23iG\360\0\0\0\0\24Y*\340\0\0\0\0\25I)\360\0\0\0\0\269\f\340\0\0\0\0\27)\v\360\0\0\0\0\30\")`\0\0\0\0\31\10\355\360\0\0\0\0\32\2\v`\0\0\0\0\32\362\np\0\0\0\0\33\341\355`\0\0\0\0\34\321\354p\0\0\0\0\35\301\317`\0\0\0\0\36\261\316p\0\0\0\0\37\241\261`\0\0\0\0 v\0\360\0\0\0\0!\201\223`\0\0\0\0\"U\342\360\0\0\0\0#j\257\340\0\0\0\0$5\304\360\0\0\0\0%J\221\340\0\0\0\0&\25\246\360\0\0\0\0'*s\340\0\0\0\0'\376\303p\0\0\0\0)\nU\340\0\0\0\0)\336\245p\0\0\0\0*\3527\340\0\0\0\0+\276\207p\0\0\0\0,\323T`\0\0\0\0-\236ip\0\0\0\0.\2636`\0\0\0\0/~Kp\0\0\0\0000\223\30`\0\0\0\0001gg\360\0\0\0\0002r\372`\0\0\0\0003GI\360\0\0\0\0004R\334`\0\0\0\0005'+\360\0\0\0\00062\276`\0\0\0\0007\7\r\360\0\0\0\08\33\332\340\0\0\0\08\346\357\360\0\0\0\09\373\274\340\0\0\0\0:\306\321\360\0\0\0\0;\333\236\340\0\0\0\0<\257\356p\0\0\0\0=\273\200\340\0\0\0\0>\217\320p\0\0\0\0?\233b\340\0\0\0\0@o\262p\0\0\0\0A\204\177`\0\0\0\0BO\224p\0\0\0\0Cda`\0\0\0\0D/vp\0\0\0\0EDC`\0\0\0\0E\363\250\360\0\0\0\0G-_\340\0\0\0\0G\323\212\360\0\0\0\0I\rA\340\0\0\0\0I\263l\360\0\0\0\0J\355#\340\0\0\0\0K\234\211p\0\0\0\0L\326@`\0\0\0\0M|kp\0\0\0\0N\266\"`\0\0\0\0O\\Mp\0\0\0\0P\226\4`\0\0\0\0Q</p\0\0\0\0Ru\346`\0\0\0\0S\34\21p\0\0\0\0TU\310`\0\0\0\0T\373\363p\0\0\0\0V5\252`\0\0\0\0V\345\17\360\0\0\0\0X\36\306\340\0\0\0\0X\304\361\360\0\0\0\0Y\376\250\340\0\0\0\0Z\244\323\360\0\0\0\0[\336\212\340\0\0\0\0\\\204\265\360\0\0\0\0]\276l\340\0\0\0\0^d\227\360\0\0\0\0_\236N\340\0\0\0\0`M\264p\0\0\0\0a\207k`\0\0\0\0b-\226p\0\0\0\0cgM`\0\0\0\0d\rxp\0\0\0\0eG/`\0\0\0\0e\355Zp\0\0\0\0g'\21`\0\0\0\0g\315<p\0\0\0\0i\6\363`\0\0\0\0i\255\36p\0\0\0\0j\346\325`\0\0\0\0k\226:\360\0\0\0\0l\317\361\340\0\0\0\0mv\34\360\0\0\0\0n\257\323\340\0\0\0\0oU\376\360\0\0\0\0p\217\265\340\0\0\0\0q5\340\360\0\0\0\0ro\227\340\0\0\0\0s\25\302\360\0\0\0\0tOy\340\0\0\0\0t\376\337p\0\0\0\0v8\226`\0\0\0\0v\336\301p\0\0\0\0x\30x`\0\0\0\0x\276\243p\0\0\0\0y\370Z`\0\0\0\0z\236\205p\0\0\0\0{\330<`\0\0\0\0|~gp\0\0\0\0}\270\36`\0\0\0\0~^Ip\0\0\0\0\177\230\0`\3\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\4\5\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\377\377\272\236\0\0\377\377\307\300\1\4\377\377\271\260\0\10\377\377\271\260\0\10\377\377\307\300\1\f\377\377\307\300\1\20LMT\0EDT\0EST\0EWT\0EPT\0\0\0\0\1\0\1\0\0\0\1\0\1\nEST5EDT,M3.2.0,M11.1.0\n", 4096) = 2260
+4433  close(3)                          = 0
+4433  newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+4433  write(1, "Wed Jun  5 04:46:46 PM EDT 2024\n", 32) = 32
+4430  <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=1098645176, u64=250316087623352}}], 128, -1, NULL, 0) = 1
+4433  close(1 <unfinished ...>
+4430  futex(0x16b058, FUTEX_WAKE_PRIVATE, 1) = 1
+4430  read(7, "Wed Jun  5 04:46:46 PM EDT 2024\n", 512) = 32
+4430  read(7, 0x40000c2020, 1504)       = -1 EAGAIN (Resource temporarily unavailable)
+4430  epoll_pwait(4, [], 128, 0, NULL, 1) = 0
+4430  epoll_pwait(4,  <unfinished ...>
+4433  <... close resumed>)              = 0
+4429  <... futex resumed>)              = 0
+4430  <... epoll_pwait resumed>[{events=EPOLLHUP, data={u32=1098645176, u64=250316087623352}}], 128, -1, NULL, 0) = 1
+4433  close(2 <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4430  read(7,  <unfinished ...>
+4433  <... close resumed>)              = 0
+4430  <... read resumed>"", 1504)       = 0
+4433  exit_group(0 <unfinished ...>
+4430  epoll_ctl(4, EPOLL_CTL_DEL, 7, 0x4000063e18) = 0
+4433  <... exit_group resumed>)         = ?
+4430  close(7)                          = 0
+4430  epoll_pwait(4,  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4430  <... epoll_pwait resumed>[{events=EPOLLHUP, data={u32=1098644696, u64=250316087622872}}], 128, 0, NULL, 1) = 1
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4430  read(9, "", 32768)                = 0
+4430  epoll_ctl(4, EPOLL_CTL_DEL, 9, 0x4000037618 <unfinished ...>
+4433  +++ exited with 0 +++
+4430  <... epoll_ctl resumed>)          = 0
+4430  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4433, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+4430  rt_sigreturn({mask=[]})           = 0
+4430  close(9)                          = 0
+4430  epoll_pwait(4, [], 128, 0, NULL, 1) = 0
+4430  epoll_pwait(4,  <unfinished ...>
+4428  <... waitid resumed>{si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4433, si_uid=1000, si_status=0, si_utime=0, si_stime=0}, WEXITED|WNOWAIT, NULL) = 0
+4428  wait4(4433, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, {ru_utime={tv_sec=0, tv_usec=0}, ru_stime={tv_sec=0, tv_usec=1730}, ...}) = 4433
+4428  write(1, "Wed Jun  5 04:46:46 PM EDT 2024\n", 32) = 32
+4428  write(1, "First child PID = 4433\n", 23) = 23
+4428  newfstatat(AT_FDCWD, "/home/chris/.local/bin/date", 0x40000a83f8, 0) = -1 ENOENT (No such file or directory)
+4428  newfstatat(AT_FDCWD, "/usr/local/sbin/date", 0x40000a84b8, 0) = -1 ENOENT (No such file or directory)
+4428  newfstatat(AT_FDCWD, "/usr/local/bin/date", 0x40000a8578, 0) = -1 ENOENT (No such file or directory)
+4428  newfstatat(AT_FDCWD, "/usr/sbin/date", 0x40000a8638, 0) = -1 ENOENT (No such file or directory)
+4428  newfstatat(AT_FDCWD, "/usr/bin/date", {st_mode=S_IFREG|0755, st_size=88424, ...}, 0) = 0
+4428  openat(AT_FDCWD, "/dev/null", O_RDONLY|O_CLOEXEC) = 3
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 3, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098644696, u64=250316087622872}}) = -1 EPERM (Operation not permitted)
+4428  pipe2([7, 8], O_CLOEXEC)          = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 7, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098644696, u64=250316087622872}}) = 0
+4428  fcntl(7, F_GETFL)                 = 0 (flags O_RDONLY)
+4428  fcntl(7, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 8, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098645176, u64=250316087623352}}) = 0
+4430  <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=1098645176, u64=250316087623352}}], 128, -1, NULL, 0) = 1
+4430  epoll_pwait(4, [], 128, 0, NULL, 1) = 0
+4430  epoll_pwait(4,  <unfinished ...>
+4428  fcntl(8, F_GETFL)                 = 0x1 (flags O_WRONLY)
+4428  fcntl(8, F_SETFL, O_WRONLY|O_NONBLOCK) = 0
+4428  pipe2([9, 10], O_CLOEXEC)         = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 9, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098644456, u64=250316087622632}}) = 0
+4428  fcntl(9, F_GETFL)                 = 0 (flags O_RDONLY)
+4428  fcntl(9, F_SETFL, O_RDONLY|O_NONBLOCK) = 0
+4428  epoll_ctl(4, EPOLL_CTL_ADD, 10, {events=EPOLLIN|EPOLLOUT|EPOLLRDHUP|EPOLLET, data={u32=1098644936, u64=250316087623112}}) = 0
+4430  <... epoll_pwait resumed>[{events=EPOLLOUT, data={u32=1098644936, u64=250316087623112}}], 128, -1, NULL, 0) = 1
+4430  epoll_pwait(4, [], 128, 0, NULL, 1) = 0
+4430  epoll_pwait(4,  <unfinished ...>
+4428  fcntl(10, F_GETFL)                = 0x1 (flags O_WRONLY)
+4428  fcntl(10, F_SETFL, O_WRONLY|O_NONBLOCK) = 0
+4428  fcntl(8, F_GETFL)                 = 0x801 (flags O_WRONLY|O_NONBLOCK)
+4428  fcntl(8, F_SETFL, O_WRONLY)       = 0
+4428  fcntl(10, F_GETFL)                = 0x801 (flags O_WRONLY|O_NONBLOCK)
+4428  fcntl(10, F_SETFL, O_WRONLY)      = 0
+4428  pipe2([11, 12], O_CLOEXEC)        = 0
+4428  getpid()                          = 4428
+4428  rt_sigprocmask(SIG_SETMASK, NULL, [], 8) = 0
+4428  rt_sigprocmask(SIG_SETMASK, ~[], NULL, 8) = 0
+4428  clone(child_stack=NULL, flags=CLONE_VM|CLONE_VFORK|SIGCHLD <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGHUP, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGINT, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGQUIT, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGILL, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGTRAP, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGABRT, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGBUS, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGFPE, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGUSR1, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGSEGV, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGUSR2, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGPIPE, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGALRM, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGTERM, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGSTKFLT, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGCHLD, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGURG, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGXCPU, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGXFSZ, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGVTALRM, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGPROF, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGWINCH, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGIO, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGPWR, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGSYS, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGRT_1, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_3, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_4, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGRT_5, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_6, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGRT_7, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGRT_8, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_9, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGRT_10, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_11, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_12, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGRT_13, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGRT_14, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGRT_15, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGRT_16, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGRT_17, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGRT_18, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGRT_19, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_20, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGRT_21, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGRT_22, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_23, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_24, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigaction(SIGRT_25, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_26, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGRT_27, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGRT_28, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_29, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4434  rt_sigaction(SIGRT_30, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4434  rt_sigaction(SIGRT_31, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO}, NULL, 8) = 0
+4434  rt_sigaction(SIGRT_32, {sa_handler=SIG_DFL, sa_mask=~[], sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO},  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... rt_sigaction resumed>NULL, 8) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4434  dup3(3, 0, 0 <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... dup3 resumed>)               = 0
+4434  dup3(8, 1, 0 <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... dup3 resumed>)               = 1
+4434  dup3(10, 2, 0)                    = 2
+4434  execve("/usr/bin/date", ["date"], 0x40000b21c0 /* 54 vars */ <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4428  <... clone resumed>)              = 4434
+4428  rt_sigprocmask(SIG_SETMASK, [], NULL, 8) = 0
+4428  close(12)                         = 0
+4428  read(11, "", 8)                   = 0
+4428  close(11)                         = 0
+4434  <... execve resumed>)             = 0
+4428  close(3)                          = 0
+4428  epoll_ctl(4, EPOLL_CTL_DEL, 8, 0x4000062b18) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4428  close(8)                          = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  brk(NULL <unfinished ...>
+4428  epoll_ctl(4, EPOLL_CTL_DEL, 10, 0x4000062b18 <unfinished ...>
+4434  <... brk resumed>)                = 0xb33a2261e000
+4428  <... epoll_ctl resumed>)          = 0
+4428  close(10)                         = 0
+4434  mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0 <unfinished ...>
+4428  futex(0x400003ed48, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+4434  <... mmap resumed>)               = 0xf377e695b000
+4428  <... futex resumed>)              = 1
+4428  waitid(P_PID, 4434,  <unfinished ...>
+4432  <... futex resumed>)              = 0
+4434  faccessat(AT_FDCWD, "/etc/ld.so.preload", R_OK <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... faccessat resumed>)          = -1 ENOENT (No such file or directory)
+4432  read(7,  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC <unfinished ...>
+4432  <... read resumed>0x4000078200, 512) = -1 EAGAIN (Resource temporarily unavailable)
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... openat resumed>)             = 3
+4432  read(9,  <unfinished ...>
+4429  futex(0x400003e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+4434  newfstatat(3, "",  <unfinished ...>
+4432  <... read resumed>0x4000100000, 32768) = -1 EAGAIN (Resource temporarily unavailable)
+4431  <... futex resumed>)              = 0
+4429  <... futex resumed>)              = 1
+4434  <... newfstatat resumed>{st_mode=S_IFREG|0644, st_size=61907, ...}, AT_EMPTY_PATH) = 0
+4432  futex(0x400003ed48, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4431  futex(0x400003e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4434  mmap(NULL, 61907, PROT_READ, MAP_PRIVATE, 3, 0 <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  <... mmap resumed>)               = 0xf377e6916000
+4434  close(3 <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4434  <... close resumed>)              = 0
+4429  futex(0x16b058, FUTEX_WAIT_PRIVATE, 0, {tv_sec=60, tv_nsec=0} <unfinished ...>
+4434  openat(AT_FDCWD, "/lib/aarch64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+4434  read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0\267\0\1\0\0\0\340u\2\0\0\0\0\0@\0\0\0\0\0\0\0\230\353\30\0\0\0\0\0\0\0\0\0@\08\0\n\0@\0B\0A\0\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0000\2\0\0\0\0\0\0000\2\0\0\0\0\0\0\10\0\0\0\0\0\0\0\3\0\0\0\4\0\0\0\220Q\25\0\0\0\0\0\220Q\25\0\0\0\0\0\220Q\25\0\0\0\0\0\33\0\0\0\0\0\0\0\33\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0\1\0\0\0\5\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\4t\30\0\0\0\0\0\4t\30\0\0\0\0\0\0\0\1\0\0\0\0\0\1\0\0\0\6\0\0\0\250}\30\0\0\0\0\0\250}\31\0\0\0\0\0\250}\31\0\0\0\0\08I\0\0\0\0\0\0\300\20\1\0\0\0\0\0\0\0\1\0\0\0\0\0\2\0\0\0\6\0\0\0\250\253\30\0\0\0\0\0\250\253\31\0\0\0\0\0\250\253\31\0\0\0\0\0\300\1\0\0\0\0\0\0\300\1\0\0\0\0\0\0\10\0\0\0\0\0\0\0\4\0\0\0\4\0\0\0p\2\0\0\0\0\0\0p\2\0\0\0\0\0\0p\2\0\0\0\0\0\0D\0\0\0\0\0\0\0D\0\0\0\0\0\0\0\4\0\0\0\0\0\0\0\7\0\0\0\4\0\0\0\250}\30\0\0\0\0\0\250}\31\0\0\0\0\0\250}\31\0\0\0\0\0\20\0\0\0\0\0\0\0\220\0\0\0\0\0\0\0\10\0\0\0\0\0\0\0P\345td\4\0\0\0\254Q\25\0\0\0\0\0\254Q\25\0\0\0\0\0\254Q\25\0\0\0\0\0\224g\0\0\0\0\0\0\224g\0\0\0\0\0\0\4\0\0\0\0\0\0\0Q\345td\6\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\20\0\0\0\0\0\0\0R\345td\4\0\0\0\250}\30\0\0\0\0\0\250}\31\0\0\0\0\0\250}\31\0\0\0\0\0X2\0\0\0\0\0\0X2\0\0\0\0\0\0\1\0\0\0\0\0\0\0\4\0\0\0\24\0\0\0\3\0\0\0GNU\0\252n\22/\243\232\340-A*\373I\327^3(\37\315(\5\4\0\0\0\20\0\0\0\1\0\0\0GNU\0\0\0\0\0\3\0\0\0\7\0\0\0\0\0\0\0\0\0\0\0\377\3\0\0\26\0\0\0\0\1\0\0\16\0\0\0\0000\22\\\240 \23\1\210\3\346\220\305E\214\0\304\0X\0\7\204 p\302\200\1\r\212\34\301\24\21\200\310D2\10*@\210V<- N\262H&\204\320\216\4\f\0\3\2\16\261\254:\17f\310\200\3003\0\300\fP\t \201\t\224\v$ ($\0\204$Z0\20X\200\312DB(\0\6\200\20\32C\0\250T\200\0IP\4Q\212P\22\4\0$\0\10  \21\20", 832) = 832
+4434  newfstatat(3, "", {st_mode=S_IFREG|0755, st_size=1637400, ...}, AT_EMPTY_PATH) = 0
+4434  mmap(NULL, 1805928, PROT_NONE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xf377e675d000
+4434  mmap(0xf377e6760000, 1740392, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0) = 0xf377e6760000
+4434  munmap(0xf377e675d000, 12288)     = 0
+4434  munmap(0xf377e6909000, 52840)     = 0
+4434  mprotect(0xf377e68e8000, 61440, PROT_NONE) = 0
+4434  mmap(0xf377e68f7000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x187000) = 0xf377e68f7000
+4434  mmap(0xf377e68fd000, 48744, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xf377e68fd000
+4434  close(3)                          = 0
+4434  set_tid_address(0xf377e695bf50)   = 4434
+4434  set_robust_list(0xf377e695bf60, 24) = 0
+4434  rseq(0xf377e695c620, 0x20, 0, 0xd428bc00) = 0
+4434  mprotect(0xf377e68f7000, 16384, PROT_READ) = 0
+4434  mprotect(0xb339e52e4000, 4096, PROT_READ) = 0
+4434  mprotect(0xf377e6960000, 8192, PROT_READ) = 0
+4434  prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+4434  munmap(0xf377e6916000, 61907)     = 0
+4434  getrandom("\xf1\xd8\xbb\xf7\xba\x0c\x0c\x25", 8, GRND_NONBLOCK) = 8
+4434  brk(NULL)                         = 0xb33a2261e000
+4434  brk(0xb33a2263f000)               = 0xb33a2263f000
+4434  openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+4434  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=5712208, ...}, AT_EMPTY_PATH) = 0
+4434  mmap(NULL, 5712208, PROT_READ, MAP_PRIVATE, 3, 0) = 0xf377e6000000
+4434  close(3)                          = 0
+4434  openat(AT_FDCWD, "/etc/localtime", O_RDONLY|O_CLOEXEC) = 3
+4434  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3552, ...}, AT_EMPTY_PATH) = 0
+4434  newfstatat(3, "", {st_mode=S_IFREG|0644, st_size=3552, ...}, AT_EMPTY_PATH) = 0
+4434  read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0\0\0\0\354\0\0\0\6\0\0\0\24\200\0\0\0\236\246\36p\237\272\353`\240\206\0p\241\232\315`\242e\342p\243\203\351\340\244j\256p\2455\247`\246S\312\360\247\25\211`\2503\254\360\250\376\245\340\252\23\216\360\252\336\207\340\253\363p\360\254\276i\340\255\323R\360\256\236K\340\257\2634\360\260~-\340\261\234Qp\262gJ`\263|3p\264G,`\265\\\25p\266'\16`\267;\367p\270\6\360`\271\33\331p\271\346\322`\273\4\365\360\273\306\264`\274\344\327\360\275\257\320\340\276\304\271\360\277\217\262\340\300\244\233\360\301o\224\340\302\204}\360\303Ov\340\304d_\360\305/X\340\306M|p\307\17:\340\310-^p\310\370W`\312\r@p\312\3309`\313\210\360p\322#\364p\322`\373\340\323u\344\360\324@\335\340\325U\306\360\326 \277\340\3275\250\360\330\0\241\340\331\25\212\360\331\340\203\340\332\376\247p\333\300e\340\334\336\211p\335\251\202`\336\276kp\337\211d`\340\236Mp\341iF`\342~/p\343I(`\344^\21p\345W.\340\346G-\360\3477\20\340\350'\17\360\351\26\362\340\352\6\361\360\352\366\324\340\353\346\323\360\354\326\266\340\355\306\265\360\356\277\323`\357\257\322p\360\237\265`\361\217\264p\362\177\227`\363o\226p\364_y`\365Oxp\366?[`\367/Zp\370(w\340\371\17<p\372\10Y\340\372\370X\360\373\350;\340\374\330:\360\375\310\35\340\376\270\34\360\377\247\377\340\0\227\376\360\1\207\341\340\2w\340\360\3p\376`\4`\375p\5P\340`\6@\337p\0070\302`\7\215\31p\t\20\244`\t\255\224\360\n\360\206`\v\340\205p\f\331\242\340\r\300gp\16\271\204\340\17\251\203\360\20\231f\340\21\211e\360\22yH\340\23iG\360\24Y*\340\25I)\360\269\f\340\27)\v\360\30\")`\31\10\355\360\32\2\v`\32\362\np\33\341\355`\34\321\354p\35\301\317`\36\261\316p\37\241\261` v\0\360!\201\223`\"U\342\360#j\257\340$5\304\360%J\221\340&\25\246\360'*s\340'\376\303p)\nU\340)\336\245p*\3527\340+\276\207p,\323T`-\236ip.\2636`/~Kp0\223\30`1gg\3602r\372`3GI\3604R\334`5'+\36062\276`7\7\r\3608\33\332\3408\346\357\3609\373\274\340:\306\321\360;\333\236\340<\257\356p=\273\200\340>\217\320p?\233b\340@o\262pA\204\177`BO\224pCda`D/vpEDC`E\363\250\360G-_\340G\323\212\360I\rA\340I\263l\360J\355#\340K\234\211pL\326@`M|kpN\266\"`O\\MpP\226\4`Q</pRu\346`S\34\21pTU\310`T\373\363pV5\252`V\345\17\360X\36\306\340X\304\361\360Y\376\250\340Z\244\323\360[\336\212\340\\\204\265\360]\276l\340^d\227\360_\236N\340`M\264pa\207k`b-\226pcgM`d\rxpeG/`e\355Zpg'\21`g\315<pi\6\363`i\255\36pj\346\325`k\226:\360l\317\361\340mv\34\360n\257\323\340oU\376\360p\217\265\340q5\340\360ro\227\340s\25\302\360tOy\340t\376\337pv8\226`v\336\301px\30x`x\276\243py\370Z`z\236\205p{\330<`|~gp}\270\36`~^Ip\177\230\0`\3\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\4\5\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\377\377\272\236\0\0\377\377\307\300\1\4\377\377\271\260\0\10\377\377\271\260\0\10\377\377\307\300\1\f\377\377\307\300\1\20LMT\0EDT\0EST\0EWT\0EPT\0\0\0\0\1\0\1\0\0\0\1\0\1TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0\0\0\0\354\0\0\0\6\0\0\0\24\377\377\377\377^\3\360\220\377\377\377\377\236\246\36p\377\377\377\377\237\272\353`\377\377\377\377\240\206\0p\377\377\377\377\241\232\315`\377\377\377\377\242e\342p\377\377\377\377\243\203\351\340\377\377\377\377\244j\256p\377\377\377\377\2455\247`\377\377\377\377\246S\312\360\377\377\377\377\247\25\211`\377\377\377\377\2503\254\360\377\377\377\377\250\376\245\340\377\377\377\377\252\23\216\360\377\377\377\377\252\336\207\340\377\377\377\377\253\363p\360\377\377\377\377\254\276i\340\377\377\377\377\255\323R\360\377\377\377\377\256\236K\340\377\377\377\377\257\2634\360\377\377\377\377\260~-\340\377\377\377\377\261\234Qp\377\377\377\377\262gJ`\377\377\377\377\263|3p\377\377\377\377\264G,`\377\377\377\377\265\\\25p\377\377\377\377\266'\16`\377\377\377\377\267;\367p\377\377\377\377\270\6\360`\377\377\377\377\271\33\331p\377\377\377\377\271\346\322`\377\377\377\377\273\4\365\360\377\377\377\377\273\306\264`\377\377\377\377\274\344\327\360\377\377\377\377\275\257\320\340\377\377\377\377\276\304\271\360\377\377\377\377\277\217\262\340\377\377\377\377\300\244\233\360\377\377\377\377\301o\224\340\377\377\377\377\302\204}\360\377\377\377\377\303Ov\340\377\377\377\377\304d_\360\377\377\377\377\305/X\340\377\377\377\377\306M|p\377\377\377\377\307\17:\340\377\377\377\377\310-^p\377\377\377\377\310\370W`\377\377\377\377\312\r@p\377\377\377\377\312\3309`\377\377\377\377\313\210\360p\377\377\377\377\322#\364p\377\377\377\377\322`\373\340\377\377\377\377\323u\344\360\377\377\377\377\324@\335\340\377\377\377\377\325U\306\360\377\377\377\377\326 \277\340\377\377\377\377\3275\250\360\377\377\377\377\330\0\241\340\377\377\377\377\331\25\212\360\377\377\377\377\331\340\203\340\377\377\377\377\332\376\247p\377\377\377\377\333\300e\340\377\377\377\377\334\336\211p\377\377\377\377\335\251\202`\377\377\377\377\336\276kp\377\377\377\377\337\211d`\377\377\377\377\340\236Mp\377\377\377\377\341iF`\377\377\377\377\342~/p\377\377\377\377\343I(`\377\377\377\377\344^\21p\377\377\377\377\345W.\340\377\377\377\377\346G-\360\377\377\377\377\3477\20\340\377\377\377\377\350'\17\360\377\377\377\377\351\26\362\340\377\377\377\377\352\6\361\360\377\377\377\377\352\366\324\340\377\377\377\377\353\346\323\360\377\377\377\377\354\326\266\340\377\377\377\377\355\306\265\360\377\377\377\377\356\277\323`\377\377\377\377\357\257\322p\377\377\377\377\360\237\265`\377\377\377\377\361\217\264p\377\377\377\377\362\177\227`\377\377\377\377\363o\226p\377\377\377\377\364_y`\377\377\377\377\365Oxp\377\377\377\377\366?[`\377\377\377\377\367/Zp\377\377\377\377\370(w\340\377\377\377\377\371\17<p\377\377\377\377\372\10Y\340\377\377\377\377\372\370X\360\377\377\377\377\373\350;\340\377\377\377\377\374\330:\360\377\377\377\377\375\310\35\340\377\377\377\377\376\270\34\360\377\377\377\377\377\247\377\340\0\0\0\0\0\227\376\360\0\0\0\0\1\207\341\340\0\0\0\0\2w\340\360\0\0\0\0\3p\376`\0\0\0\0\4`\375p\0\0\0\0\5P\340`\0\0\0\0\6@\337p\0\0\0\0\0070\302`\0\0\0\0\7\215\31p\0\0\0\0\t\20\244`\0\0\0\0\t\255\224\360\0\0\0\0\n\360\206`\0\0\0\0\v\340\205p\0\0\0\0\f\331\242\340\0\0\0\0\r\300gp\0\0\0\0\16\271\204\340\0\0\0\0\17\251\203\360\0\0\0\0\20\231f\340\0\0\0\0\21\211e\360\0\0\0\0\22yH\340\0\0\0\0\23iG\360\0\0\0\0\24Y*\340\0\0\0\0\25I)\360\0\0\0\0\269\f\340\0\0\0\0\27)\v\360\0\0\0\0\30\")`\0\0\0\0\31\10\355\360\0\0\0\0\32\2\v`\0\0\0\0\32\362\np\0\0\0\0\33\341\355`\0\0\0\0\34\321\354p\0\0\0\0\35\301\317`\0\0\0\0\36\261\316p\0\0\0\0\37\241\261`\0\0\0\0 v\0\360\0\0\0\0!\201\223`\0\0\0\0\"U\342\360\0\0\0\0#j\257\340\0\0\0\0$5\304\360\0\0\0\0%J\221\340\0\0\0\0&\25\246\360\0\0\0\0'*s\340\0\0\0\0'\376\303p\0\0\0\0)\nU\340\0\0\0\0)\336\245p\0\0\0\0*\3527\340\0\0\0\0+\276\207p\0\0\0\0,\323T`\0\0\0\0-\236ip\0\0\0\0.\2636`\0\0\0\0/~Kp\0\0\0\0000\223\30`\0\0\0\0001gg\360\0\0\0\0002r\372`\0\0\0\0003GI\360\0\0\0\0004R\334`\0\0\0\0005'+\360\0\0\0\00062\276`\0\0\0\0007\7\r\360\0\0\0\08\33\332\340\0\0\0\08\346\357\360\0\0\0\09\373\274\340\0\0\0\0:\306\321\360\0\0\0\0;\333\236\340\0\0\0\0<\257\356p\0\0\0\0=\273\200\340\0\0\0\0>\217\320p\0\0\0\0?\233b\340\0\0\0\0@o\262p\0\0\0\0A\204\177`\0\0\0\0BO\224p\0\0\0\0Cda`\0\0\0\0D/vp\0\0\0\0EDC`\0\0\0\0E\363\250\360\0\0\0\0G-_\340\0\0\0\0G\323\212\360\0\0\0\0I\rA\340\0\0\0\0I\263l\360\0\0\0\0J\355#\340\0\0\0\0K\234\211p\0\0\0\0L\326@`\0\0\0\0M|kp\0\0\0\0N\266\"`\0\0\0\0O\\Mp\0\0\0\0P\226\4`\0\0\0\0Q</p\0\0\0\0Ru\346`\0\0\0\0S\34\21p\0\0\0\0TU\310`\0\0\0\0T\373\363p\0\0\0\0V5\252`\0\0\0\0V\345\17\360\0\0\0\0X\36\306\340\0\0\0\0X\304\361\360\0\0\0\0Y\376\250\340\0\0\0\0Z\244\323\360\0\0\0\0[\336\212\340\0\0\0\0\\\204\265\360\0\0\0\0]\276l\340\0\0\0\0^d\227\360\0\0\0\0_\236N\340\0\0\0\0`M\264p\0\0\0\0a\207k`\0\0\0\0b-\226p\0\0\0\0cgM`\0\0\0\0d\rxp\0\0\0\0eG/`\0\0\0\0e\355Zp\0\0\0\0g'\21`\0\0\0\0g\315<p\0\0\0\0i\6\363`\0\0\0\0i\255\36p\0\0\0\0j\346\325`\0\0\0\0k\226:\360\0\0\0\0l\317\361\340\0\0\0\0mv\34\360\0\0\0\0n\257\323\340\0\0\0\0oU\376\360\0\0\0\0p\217\265\340\0\0\0\0q5\340\360\0\0\0\0ro\227\340\0\0\0\0s\25\302\360\0\0\0\0tOy\340\0\0\0\0t\376\337p\0\0\0\0v8\226`\0\0\0\0v\336\301p\0\0\0\0x\30x`\0\0\0\0x\276\243p\0\0\0\0y\370Z`\0\0\0\0z\236\205p\0\0\0\0{\330<`\0\0\0\0|~gp\0\0\0\0}\270\36`\0\0\0\0~^Ip\0\0\0\0\177\230\0`\3\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\4\5\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\377\377\272\236\0\0\377\377\307\300\1\4\377\377\271\260\0\10\377\377\271\260\0\10\377\377\307\300\1\f\377\377\307\300\1\20LMT\0EDT\0EST\0EWT\0EPT\0\0\0\0\1\0\1\0\0\0\1\0\1\nEST5EDT,M3.2.0,M11.1.0\n", 4096) = 3552
+4434  lseek(3, -2260, SEEK_CUR)         = 1292
+4434  read(3, "TZif2\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\6\0\0\0\6\0\0\0\0\0\0\0\354\0\0\0\6\0\0\0\24\377\377\377\377^\3\360\220\377\377\377\377\236\246\36p\377\377\377\377\237\272\353`\377\377\377\377\240\206\0p\377\377\377\377\241\232\315`\377\377\377\377\242e\342p\377\377\377\377\243\203\351\340\377\377\377\377\244j\256p\377\377\377\377\2455\247`\377\377\377\377\246S\312\360\377\377\377\377\247\25\211`\377\377\377\377\2503\254\360\377\377\377\377\250\376\245\340\377\377\377\377\252\23\216\360\377\377\377\377\252\336\207\340\377\377\377\377\253\363p\360\377\377\377\377\254\276i\340\377\377\377\377\255\323R\360\377\377\377\377\256\236K\340\377\377\377\377\257\2634\360\377\377\377\377\260~-\340\377\377\377\377\261\234Qp\377\377\377\377\262gJ`\377\377\377\377\263|3p\377\377\377\377\264G,`\377\377\377\377\265\\\25p\377\377\377\377\266'\16`\377\377\377\377\267;\367p\377\377\377\377\270\6\360`\377\377\377\377\271\33\331p\377\377\377\377\271\346\322`\377\377\377\377\273\4\365\360\377\377\377\377\273\306\264`\377\377\377\377\274\344\327\360\377\377\377\377\275\257\320\340\377\377\377\377\276\304\271\360\377\377\377\377\277\217\262\340\377\377\377\377\300\244\233\360\377\377\377\377\301o\224\340\377\377\377\377\302\204}\360\377\377\377\377\303Ov\340\377\377\377\377\304d_\360\377\377\377\377\305/X\340\377\377\377\377\306M|p\377\377\377\377\307\17:\340\377\377\377\377\310-^p\377\377\377\377\310\370W`\377\377\377\377\312\r@p\377\377\377\377\312\3309`\377\377\377\377\313\210\360p\377\377\377\377\322#\364p\377\377\377\377\322`\373\340\377\377\377\377\323u\344\360\377\377\377\377\324@\335\340\377\377\377\377\325U\306\360\377\377\377\377\326 \277\340\377\377\377\377\3275\250\360\377\377\377\377\330\0\241\340\377\377\377\377\331\25\212\360\377\377\377\377\331\340\203\340\377\377\377\377\332\376\247p\377\377\377\377\333\300e\340\377\377\377\377\334\336\211p\377\377\377\377\335\251\202`\377\377\377\377\336\276kp\377\377\377\377\337\211d`\377\377\377\377\340\236Mp\377\377\377\377\341iF`\377\377\377\377\342~/p\377\377\377\377\343I(`\377\377\377\377\344^\21p\377\377\377\377\345W.\340\377\377\377\377\346G-\360\377\377\377\377\3477\20\340\377\377\377\377\350'\17\360\377\377\377\377\351\26\362\340\377\377\377\377\352\6\361\360\377\377\377\377\352\366\324\340\377\377\377\377\353\346\323\360\377\377\377\377\354\326\266\340\377\377\377\377\355\306\265\360\377\377\377\377\356\277\323`\377\377\377\377\357\257\322p\377\377\377\377\360\237\265`\377\377\377\377\361\217\264p\377\377\377\377\362\177\227`\377\377\377\377\363o\226p\377\377\377\377\364_y`\377\377\377\377\365Oxp\377\377\377\377\366?[`\377\377\377\377\367/Zp\377\377\377\377\370(w\340\377\377\377\377\371\17<p\377\377\377\377\372\10Y\340\377\377\377\377\372\370X\360\377\377\377\377\373\350;\340\377\377\377\377\374\330:\360\377\377\377\377\375\310\35\340\377\377\377\377\376\270\34\360\377\377\377\377\377\247\377\340\0\0\0\0\0\227\376\360\0\0\0\0\1\207\341\340\0\0\0\0\2w\340\360\0\0\0\0\3p\376`\0\0\0\0\4`\375p\0\0\0\0\5P\340`\0\0\0\0\6@\337p\0\0\0\0\0070\302`\0\0\0\0\7\215\31p\0\0\0\0\t\20\244`\0\0\0\0\t\255\224\360\0\0\0\0\n\360\206`\0\0\0\0\v\340\205p\0\0\0\0\f\331\242\340\0\0\0\0\r\300gp\0\0\0\0\16\271\204\340\0\0\0\0\17\251\203\360\0\0\0\0\20\231f\340\0\0\0\0\21\211e\360\0\0\0\0\22yH\340\0\0\0\0\23iG\360\0\0\0\0\24Y*\340\0\0\0\0\25I)\360\0\0\0\0\269\f\340\0\0\0\0\27)\v\360\0\0\0\0\30\")`\0\0\0\0\31\10\355\360\0\0\0\0\32\2\v`\0\0\0\0\32\362\np\0\0\0\0\33\341\355`\0\0\0\0\34\321\354p\0\0\0\0\35\301\317`\0\0\0\0\36\261\316p\0\0\0\0\37\241\261`\0\0\0\0 v\0\360\0\0\0\0!\201\223`\0\0\0\0\"U\342\360\0\0\0\0#j\257\340\0\0\0\0$5\304\360\0\0\0\0%J\221\340\0\0\0\0&\25\246\360\0\0\0\0'*s\340\0\0\0\0'\376\303p\0\0\0\0)\nU\340\0\0\0\0)\336\245p\0\0\0\0*\3527\340\0\0\0\0+\276\207p\0\0\0\0,\323T`\0\0\0\0-\236ip\0\0\0\0.\2636`\0\0\0\0/~Kp\0\0\0\0000\223\30`\0\0\0\0001gg\360\0\0\0\0002r\372`\0\0\0\0003GI\360\0\0\0\0004R\334`\0\0\0\0005'+\360\0\0\0\00062\276`\0\0\0\0007\7\r\360\0\0\0\08\33\332\340\0\0\0\08\346\357\360\0\0\0\09\373\274\340\0\0\0\0:\306\321\360\0\0\0\0;\333\236\340\0\0\0\0<\257\356p\0\0\0\0=\273\200\340\0\0\0\0>\217\320p\0\0\0\0?\233b\340\0\0\0\0@o\262p\0\0\0\0A\204\177`\0\0\0\0BO\224p\0\0\0\0Cda`\0\0\0\0D/vp\0\0\0\0EDC`\0\0\0\0E\363\250\360\0\0\0\0G-_\340\0\0\0\0G\323\212\360\0\0\0\0I\rA\340\0\0\0\0I\263l\360\0\0\0\0J\355#\340\0\0\0\0K\234\211p\0\0\0\0L\326@`\0\0\0\0M|kp\0\0\0\0N\266\"`\0\0\0\0O\\Mp\0\0\0\0P\226\4`\0\0\0\0Q</p\0\0\0\0Ru\346`\0\0\0\0S\34\21p\0\0\0\0TU\310`\0\0\0\0T\373\363p\0\0\0\0V5\252`\0\0\0\0V\345\17\360\0\0\0\0X\36\306\340\0\0\0\0X\304\361\360\0\0\0\0Y\376\250\340\0\0\0\0Z\244\323\360\0\0\0\0[\336\212\340\0\0\0\0\\\204\265\360\0\0\0\0]\276l\340\0\0\0\0^d\227\360\0\0\0\0_\236N\340\0\0\0\0`M\264p\0\0\0\0a\207k`\0\0\0\0b-\226p\0\0\0\0cgM`\0\0\0\0d\rxp\0\0\0\0eG/`\0\0\0\0e\355Zp\0\0\0\0g'\21`\0\0\0\0g\315<p\0\0\0\0i\6\363`\0\0\0\0i\255\36p\0\0\0\0j\346\325`\0\0\0\0k\226:\360\0\0\0\0l\317\361\340\0\0\0\0mv\34\360\0\0\0\0n\257\323\340\0\0\0\0oU\376\360\0\0\0\0p\217\265\340\0\0\0\0q5\340\360\0\0\0\0ro\227\340\0\0\0\0s\25\302\360\0\0\0\0tOy\340\0\0\0\0t\376\337p\0\0\0\0v8\226`\0\0\0\0v\336\301p\0\0\0\0x\30x`\0\0\0\0x\276\243p\0\0\0\0y\370Z`\0\0\0\0z\236\205p\0\0\0\0{\330<`\0\0\0\0|~gp\0\0\0\0}\270\36`\0\0\0\0~^Ip\0\0\0\0\177\230\0`\3\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\4\5\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\1\2\377\377\272\236\0\0\377\377\307\300\1\4\377\377\271\260\0\10\377\377\271\260\0\10\377\377\307\300\1\f\377\377\307\300\1\20LMT\0EDT\0EST\0EWT\0EPT\0\0\0\0\1\0\1\0\0\0\1\0\1\nEST5EDT,M3.2.0,M11.1.0\n", 4096) = 2260
+4434  close(3)                          = 0
+4434  newfstatat(1, "", {st_mode=S_IFIFO|0600, st_size=0, ...}, AT_EMPTY_PATH) = 0
+4434  write(1, "Wed Jun  5 04:46:46 PM EDT 2024\n", 32) = 32
+4430  <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=1098644696, u64=250316087622872}}], 128, -1, NULL, 0) = 1
+4434  close(1 <unfinished ...>
+4430  futex(0x16b058, FUTEX_WAKE_PRIVATE, 1) = 1
+4434  <... close resumed>)              = 0
+4430  read(7,  <unfinished ...>
+4429  <... futex resumed>)              = 0
+4434  close(2 <unfinished ...>
+4430  <... read resumed>"Wed Jun  5 04:46:46 PM EDT 2024\n", 512) = 32
+4434  <... close resumed>)              = 0
+4430  read(7,  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4434  exit_group(0 <unfinished ...>
+4430  <... read resumed>"", 1504)       = 0
+4434  <... exit_group resumed>)         = ?
+4430  epoll_ctl(4, EPOLL_CTL_DEL, 7, 0x4000037618) = 0
+4430  close(7)                          = 0
+4430  epoll_pwait(4, [{events=EPOLLHUP, data={u32=1098644456, u64=250316087622632}}], 128, 0, NULL, 1) = 1
+4430  read(9,  <unfinished ...>
+4434  +++ exited with 0 +++
+4428  <... waitid resumed>{si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4434, si_uid=1000, si_status=0, si_utime=0, si_stime=0}, WEXITED|WNOWAIT, NULL) = 0
+4430  <... read resumed>"", 32768)      = 0
+4428  --- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=4434, si_uid=1000, si_status=0, si_utime=0, si_stime=0} ---
+4430  epoll_ctl(4, EPOLL_CTL_DEL, 9, 0x4000037e18 <unfinished ...>
+4428  rt_sigreturn({mask=[]} <unfinished ...>
+4430  <... epoll_ctl resumed>)          = 0
+4428  <... rt_sigreturn resumed>)       = 0
+4430  close(9 <unfinished ...>
+4428  wait4(4434,  <unfinished ...>
+4430  <... close resumed>)              = 0
+4428  <... wait4 resumed>[{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, {ru_utime={tv_sec=0, tv_usec=0}, ru_stime={tv_sec=0, tv_usec=2235}, ...}) = 4434
+4430  epoll_pwait(4,  <unfinished ...>
+4428  write(1, "Wed Jun  5 04:46:46 PM EDT 2024\n", 32 <unfinished ...>
+4430  <... epoll_pwait resumed>[], 128, 0, NULL, 1) = 0
+4428  <... write resumed>)              = 32
+4430  epoll_pwait(4,  <unfinished ...>
+4428  write(1, "Second child PID = 4434\n", 24) = 24
+4428  futex(0x400003e948, FUTEX_WAKE_PRIVATE, 1) = 1
+4431  <... futex resumed>)              = 0
+4428  write(6, "\0", 1 <unfinished ...>
+4431  write(1, "Inside goroutine! Sleeping for 3 seconds...\n", 44 <unfinished ...>
+4428  <... write resumed>)              = 1
+4431  <... write resumed>)              = 44
+4430  <... epoll_pwait resumed>[{events=EPOLLIN, data={u32=1675712, u64=1675712}}], 128, -1, NULL, 0) = 1
+4428  futex(0x16aca8, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4431  futex(0x400003e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4430  read(5, "\0", 16)                 = 1
+4430  epoll_pwait(4, [], 128, 0, NULL, 1) = 0
+4430  epoll_pwait(4,  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4429  futex(0x16b058, FUTEX_WAIT_PRIVATE, 0, {tv_sec=0, tv_nsec=999340915}) = -1 ETIMEDOUT (Connection timed out)
+4430  <... epoll_pwait resumed>[], 128, 999, NULL, 0) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4430  epoll_pwait(4, [], 128, 0, NULL, 1) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4430  futex(0x400003e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+4431  <... futex resumed>)              = 0
+4430  <... futex resumed>)              = 1
+4429  <... nanosleep resumed>NULL)      = 0
+4431  epoll_pwait(4,  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4431  <... epoll_pwait resumed>[], 128, 0, NULL, 1) = 0
+4430  write(1, "Hello from main thread!\n", 24 <unfinished ...>
+4431  epoll_pwait(4,  <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4430  <... write resumed>)              = 24
+4430  futex(0x400003e548, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4429  futex(0x16b058, FUTEX_WAIT_PRIVATE, 0, {tv_sec=1, tv_nsec=998236429} <unfinished ...>
+4431  <... epoll_pwait resumed>[], 128, 1998, NULL, 0) = 0
+4429  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+4431  futex(0x400003e548, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4431  <... futex resumed>)              = 1
+4430  <... futex resumed>)              = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4431  write(1, "Inside goroutine! Sleeping for 3 seconds...\n", 44 <unfinished ...>
+4430  epoll_pwait(4,  <unfinished ...>
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4431  <... write resumed>)              = 44
+4430  <... epoll_pwait resumed>[], 128, 0, NULL, 1) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4431  epoll_pwait(4,  <unfinished ...>
+4430  epoll_pwait(4,  <unfinished ...>
+4431  <... epoll_pwait resumed>[], 128, 0, NULL, 1) = 0
+4429  <... nanosleep resumed>NULL)      = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4431  futex(0x400003e948, FUTEX_WAIT_PRIVATE, 0, NULL <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4429  futex(0x16b058, FUTEX_WAIT_PRIVATE, 0, {tv_sec=2, tv_nsec=999646374} <unfinished ...>
+4430  <... epoll_pwait resumed>[], 128, 2999, NULL, 0) = 0
+4429  <... futex resumed>)              = -1 ETIMEDOUT (Connection timed out)
+4429  nanosleep({tv_sec=0, tv_nsec=20000}, NULL) = 0
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4430  futex(0x400003e948, FUTEX_WAKE_PRIVATE, 1 <unfinished ...>
+4429  <... nanosleep resumed>NULL)      = 0
+4431  <... futex resumed>)              = 0
+4430  <... futex resumed>)              = 1
+4429  nanosleep({tv_sec=0, tv_nsec=20000},  <unfinished ...>
+4431  epoll_pwait(4,  <unfinished ...>
+4430  exit_group(0 <unfinished ...>
+4428  <... futex resumed>)              = ?
+4432  <... futex resumed>)              = ?
+4431  <... epoll_pwait resumed> <unfinished ...>) = ?
+4430  <... exit_group resumed>)         = ?
+4429  <... nanosleep resumed> <unfinished ...>) = ?
+4432  +++ exited with 0 +++
+4431  +++ exited with 0 +++
+4430  +++ exited with 0 +++
+4429  +++ exited with 0 +++
+4428  +++ exited with 0 +++
