@@ -23,7 +23,6 @@ int main(void)
     switch (fork()) {
     case 0:
         execlp("date", "date", (char *) 0);
-        exit(0);
     default:
         pid_t child = wait(NULL);
         printf("First child PID = %d\n", child);
@@ -32,7 +31,6 @@ int main(void)
     switch (fork()) {
     case 0:
         execlp("date", "date", (char *) 0);
-        exit(0);
     default:
         pid_t child = wait(NULL);
         printf("Second child PID = %d\n", child);
