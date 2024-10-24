@@ -1,3 +1,5 @@
 target/
 tester
 *.class
+.DS_Store
+
